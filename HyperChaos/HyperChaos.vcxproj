@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BAA8F055-261B-42DF-8A16-D97EC40102C0}</ProjectGuid>
+    <TemplateGuid>{1bc93793-694f-48fe-9372-81e2b05556fd}</TemplateGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration>Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+    <RootNamespace>PolyVisor</RootNamespace>
+    <ProjectName>HyperChaos</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>KMDF</DriverType>
+    <DriverTargetPlatform>Universal</DriverTargetPlatform>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <Inf Include="HyperChaos.inf" />
+  </ItemGroup>
+  <ItemGroup>
+    <FilesToPackage Include="$(TargetPath)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Desktop\hv\HyperBone-master\src\Util\LDasm.c" />
+    <ClCompile Include="EPT.c" />
+    <ClCompile Include="Exit.c" />
+    <ClCompile Include="FileHook.c" />
+    <ClCompile Include="Hook.c" />
+    <ClCompile Include="HVM.c" />
+    <ClCompile Include="HyperChaos.c" />
+    <ClCompile Include="IDT.c" />
+    <ClCompile Include="RegHelper.c" />
+    <ClCompile Include="SSDTHook.c" />
+    <ClCompile Include="Utils.c" />
+    <ClCompile Include="VMCS.c" />
+    <ClCompile Include="VMM.c" />
+    <ClCompile Include="VMX.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Desktop\hv\HyperBone-master\src\Util\LDasm.h" />
+    <ClInclude Include="3rd_party\phnt\ntdbg.h" />
+    <ClInclude Include="3rd_party\phnt\ntexapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntgdi.h" />
+    <ClInclude Include="3rd_party\phnt\ntioapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntkeapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntldr.h" />
+    <ClInclude Include="3rd_party\phnt\ntlpcapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntmisc.h" />
+    <ClInclude Include="3rd_party\phnt\ntmmapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntnls.h" />
+    <ClInclude Include="3rd_party\phnt\ntobapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntpebteb.h" />
+    <ClInclude Include="3rd_party\phnt\ntpfapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntpnpapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntpoapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntpsapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntregapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntrtl.h" />
+    <ClInclude Include="3rd_party\phnt\ntsam.h" />
+    <ClInclude Include="3rd_party\phnt\ntseapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntsmss.h" />
+    <ClInclude Include="3rd_party\phnt\nttmapi.h" />
+    <ClInclude Include="3rd_party\phnt\nttp.h" />
+    <ClInclude Include="3rd_party\phnt\ntwow64.h" />
+    <ClInclude Include="3rd_party\phnt\ntxcapi.h" />
+    <ClInclude Include="3rd_party\phnt\ntzwapi.h" />
+    <ClInclude Include="3rd_party\phnt\phnt.h" />
+    <ClInclude Include="3rd_party\phnt\phnt_ntdef.h" />
+    <ClInclude Include="3rd_party\phnt\phnt_windows.h" />
+    <ClInclude Include="3rd_party\phnt\subprocesstag.h" />
+    <ClInclude Include="3rd_party\phnt\winsta.h" />
+    <ClInclude Include="Arch.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="CPU.h" />
+    <ClInclude Include="debugaux.h" />
+    <ClInclude Include="Exit.h" />
+    <ClInclude Include="Extern.h" />
+    <ClInclude Include="FileHook.h" />
+    <ClInclude Include="Hook.h" />
+    <ClInclude Include="HVM.h" />
+    <ClInclude Include="MSR.h" />
+    <ClInclude Include="Native.h" />
+    <ClInclude Include="OS.h" />
+    <ClInclude Include="PE.h" />
+    <ClInclude Include="RegHelper.h" />
+    <ClInclude Include="SSDTHook.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="VMCS.h" />
+    <ClInclude Include="VMM.h" />
+    <ClInclude Include="vmm_settings.h" />
+    <ClInclude Include="VMX.h" />
+    <ClInclude Include="EPT.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

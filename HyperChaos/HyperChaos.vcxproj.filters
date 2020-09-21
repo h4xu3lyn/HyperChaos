@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{c7119815-9b7a-4f8e-8f0c-90e1fb380e44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Include">
+      <UniqueIdentifier>{be6c4c17-a646-4503-8e63-f7132feaa302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Source Files">
+      <UniqueIdentifier>{afc3e1b7-cdb7-4830-94e4-579bbdfb465c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Header Files">
+      <UniqueIdentifier>{4e652e36-5080-4a10-b1b5-505f8115aa9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Include\3rd_party">
+      <UniqueIdentifier>{ccd4cb09-f82b-4721-bb16-7ef2ff924bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Include\3rd_party\phnt">
+      <UniqueIdentifier>{a95aa8fb-013a-421b-bc32-1b1106937851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Arch">
+      <UniqueIdentifier>{8add9a45-4ca7-4f8c-9b78-3361b88bfbb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Arch\Intel">
+      <UniqueIdentifier>{39098d87-d56e-426b-9eca-c03e65b45cd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Arch\Intel\Header Files">
+      <UniqueIdentifier>{063ef07c-3fe5-4767-ab5c-d336e537dfc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Arch\Intel\Source Files">
+      <UniqueIdentifier>{47c1bcc7-1d64-4581-99b3-da8a6f00ac12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{d940afd1-9ec9-4d9f-ae88-1599b15b065e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util\Header Files">
+      <UniqueIdentifier>{ec66737b-529f-453a-ba24-31dcea790051}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util\Source Files">
+      <UniqueIdentifier>{d3348187-8a4f-4ea9-8fdb-726fdc8f81f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{c69f5754-69ea-4b4b-95e1-212348e98a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers\Header Files">
+      <UniqueIdentifier>{fc6ed9d5-3482-44ae-9ab5-ce58c587b615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers\Source Files">
+      <UniqueIdentifier>{80ffa05e-5bf5-4f5d-aeef-0f5705edd944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hooks">
+      <UniqueIdentifier>{16ddd697-826d-42bf-baed-3a5aa9bdfa29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hooks\Header Files">
+      <UniqueIdentifier>{de615ada-505c-4d59-a736-7300c730bd88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hooks\Source Files">
+      <UniqueIdentifier>{4d247f3f-df78-468e-a8d6-ee615f047c0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VMCS.c">
+      <Filter>Source Files\Arch\Intel\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VMM.c">
+      <Filter>Source Files\Arch\Intel\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VMX.c">
+      <Filter>Source Files\Arch\Intel\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HVM.c">
+      <Filter>Source Files\Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EPT.c">
+      <Filter>Source Files\Arch\Intel\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\hv\HyperBone-master\src\Util\LDasm.c">
+      <Filter>Source Files\Util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.c">
+      <Filter>Source Files\Util\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exit.c">
+      <Filter>Source Files\Arch\Intel\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegHelper.c">
+      <Filter>Source Files\Helpers\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperChaos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook.c">
+      <Filter>Source Files\Hooks\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IDT.c">
+      <Filter>Source Files\Hooks\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SSDTHook.c">
+      <Filter>Source Files\Hooks\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHook.c">
+      <Filter>Source Files\Hooks\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CPU.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="MSR.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Native.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Arch.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Extern.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OS.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="VMX.h">
+      <Filter>Source Files\Arch\Intel\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VMM.h">
+      <Filter>Source Files\Arch\Intel\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VMCS.h">
+      <Filter>Source Files\Arch\Intel\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EPT.h">
+      <Filter>Source Files\Arch\Intel\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\hv\HyperBone-master\src\Util\LDasm.h">
+      <Filter>Source Files\Util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Source Files\Util\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HVM.h">
+      <Filter>Source Files\Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PE.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="vmm_settings.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Exit.h">
+      <Filter>Source Files\Arch\Intel\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegHelper.h">
+      <Filter>Source Files\Helpers\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debugaux.h">
+      <Filter>Header Files\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook.h">
+      <Filter>Source Files\Hooks\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SSDTHook.h">
+      <Filter>Source Files\Hooks\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHook.h">
+      <Filter>Source Files\Hooks\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntioapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntkeapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntldr.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntlpcapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntmisc.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntmmapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntnls.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntobapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntpebteb.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntpfapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntpnpapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntpoapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntpsapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntregapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntrtl.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntsam.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntseapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntsmss.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\nttmapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\nttp.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntwow64.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntxcapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntzwapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\phnt.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\phnt_ntdef.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\phnt_windows.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\subprocesstag.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\winsta.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntdbg.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntexapi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\phnt\ntgdi.h">
+      <Filter>Header Files\Include\3rd_party\phnt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="HyperChaos.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+</Project>
